@@ -1,0 +1,110 @@
+/*reset*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 100%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+:root{
+--branco: #fff;
+--preto: #0a0a0a;
+
+}
+nav,ul{list-style: none;}
+a{ text-decoration: none; cursor: pointer ; opacity: 0.9;}
+a:hover{opacity: 1;}
+
+/*Header*/
+
+header{ width:100%; background-color: white; position: absolute;left: 0; top: 0; display: flex;justify-content: space-between; align-items: center; padding: 20px 50px;   }
+header img{width: 150px; }
+header nav{display: flex; }
+header li a{color:#191c03;}
+header li{margin: 0 15px ;}
+header li:first-child{margin-left: 0;}
+header li:last-child{margin-right: 0;}
+@media (max-width: 700px) {
+    header{flex-direction: column; }
+    header li{margin-top: 20px;}
+
+    
+}
+/*HEro*/
+
+section.hero{background-image:url(../img/hero.jpg); background-size: cover; min-height: 100vh; color: var(--branco); display: flex; justify-content: center; text-align: center; align-items: center;flex-direction: column; }
+
+.hero h1{font-size: 3.2rem; margin-bottom: 15px;}
+.hero h3{font-size: 2rem; margin-bottom: 15px;}
+.hero .btn{ background-color:var(--branco) ; border-radius: 4px; color: var(--preto); padding: 20px 50px;  text-transform: uppercase;}
+
+@media (max-width: 700px) {
+    .hero h1{font-size: 2.5rem; }
+    .hero h3{font-size: 1.5rem;}
+    .hero .btn{ background-color:var(--branco) ; border-radius: 4px; color: var(--preto); padding: 10px 40px;  text-transform: uppercase;}
+}
+
+/*conheça o hotel*/
+.conheca-o-hotel{display: flex; flex-direction: column; align-items: center; padding: 100px; text-align: center;}
+.conheca-o-hotel h3{font-size: 2rem; margin-bottom: 35px; text-align: center; }
+.conheca-o-hotel p{max-width: 800px; margin-bottom: 35px;text-align: center; }
+.conheca-o-hotel hr{width: 200px; height: 2px; background-color: var(--preto); margin-bottom: 60px; border: none;}
+
+
+.conheca-o-hotel .grid{width: 100%; display: flex; flex-wrap:wrap ;}
+.conheca-o-hotel li{height: 350px; padding: 20px;border-radius: 4px; background-clip:content-box ; background-size: cover; background-position: center;}
+.conheca-o-hotel .grid li.small{flex-basis: 40%;}
+.conheca-o-hotel .grid li.large{flex-basis: 60%;}
+
+@media (max-width: 700px) {
+.conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large{flex-basis: 100%;}
+ }
+
+
+/*cracteristicas*/
+.cracteristicas{background-color: #191c03; display: flex; flex-direction: column; align-items: center; padding: 100px; text-align: center;}
+.cracteristicas h3{font-size: 2rem; margin-bottom: 35px; text-align: center; color: #fff;}
+.cracteristicas p{max-width: 800px; margin-bottom: 35px;text-align: center; color: #fff;}
+.cracteristicas hr{width: 200px; height: 2px; background-color: var(--branco); margin-bottom: 60px; border: none;}
+
+
+
+.cracteristicas .grid{ width: 100%; display: flex; }
+.cracteristicas .grid li{padding: 0 30px; text-align: center;}
+.cracteristicas .grid li i{color:#c3c63d; font-size: 50px; margin-bottom:30px ;}
+.cracteristicas .grid li h4{font-size: 1.5rem; color: #c3c63d; margin-bottom: 30px;}
+.cracteristicas .grid li p{color: #fff;}
+
+
+@media (max-width: 850px) {
+    .cracteristicas .grid{  flex-direction: column; }
+}
+
+
+/*Newslatter*/
+
+.newslatter{ display: flex; flex-direction: column; align-items: center; padding: 100px 59px;}
+.newslatter h3{font-size: 2rem; margin-bottom: 35px; text-align: center; color: #c3c63d;}
+.newslatter p{max-width: 800px; margin-bottom: 35px;text-align: center; color:#16180a;}
+.newslatter hr{width: 200px; height: 2px; background-color:#c3c63d; margin-bottom: 60px; border: none;}
+
+.newslatter form{ display: flex; align-items: center;justify-content: center; flex-wrap: wrap; width: 80%; max-width:800px ; }
+ .newslatter input{padding:15px; border: 1px solid #c3c63d; border-radius: 4px; margin-right: 15px; flex: 1;}
+ .newslatter button{ padding: 15px; background-color: #c3c63d; color: whitesmoke; text-transform: uppercase; border: none; border-radius: 4px;  cursor: pointer;} 
+
+ @media (max-width: 850px) {
+    .newslatter input{ flex-basis: 100%; margin-bottom:15px ;}
+}
+
+
+/*footer*/
+
+footer{display: flex; flex-direction: column; background-color: #191c09; padding: 50px 0; align-items: center; }
+
+footer ul {display: flex; margin-bottom:25px ;}
+footer ul li{margin-right:20px ;}
+footer li:last-child{margin-right:0;}
+footer ul li a {color: #c3c63d; font-size: 2rem;}
+footer p{color: #c3c63d; text-align: center;}
+
+
+
